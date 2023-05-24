@@ -130,7 +130,7 @@ body {
         z-index: 1;
         background-color: #FFFDED;
         padding: 30px;
-        left: 65%;
+        left: 50%;
         top: 13.4%;
         transition: all 1s linear;
         border: 1px solid black;
@@ -173,9 +173,11 @@ body {
     height: 200px;
     border-bottom: 0.5px solid black;
 }
-
+.grid{
+    display:grid;
+}
 .flex {
-    display: flex;
+   display: flex;
     width: 100%;
 }
 
@@ -225,7 +227,7 @@ body {
 @media screen and (max-width:685px) {
     .nav {
         padding: 10px;
-        left: 65%;
+        left: 50%;
         top: 13.4%;
     }
 }
@@ -264,7 +266,7 @@ body {
 @media screen and (max-width:570px) {
     .nav {
         padding: 5px;
-        left: 60%;
+        left: 50%;
         top: 13.4%;
     }
 
@@ -416,7 +418,7 @@ body {
     align-items: center;
     text-align: start;
     margin-top: 100px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .two-column h3 {
@@ -466,7 +468,7 @@ body {
 .sides-info-second p {
     color: #02594D;
     font-size: 13px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .footer {
@@ -501,7 +503,7 @@ body {
 @media screen and (max-width:600px) {
     .title-on-absolute h1 {
         top: 18%;
-        left: 31%;
+        left: 25%;
         font-size: 60px;
     }
 }
@@ -509,9 +511,13 @@ body {
 @media screen and (max-width:400px) {
     .title-on-absolute h1 {
         top: 18%;
-        left: 22%;
-        font-size: 50px;
+        left: 12%;
+        font-size: 30px;
     }
+    .two-column p {
+    color: #02594D;
+    font-size: 10px;
+}
 }
 
 .relative {
@@ -683,5 +689,8 @@ body {
 @media screen and (max-width: 420px) {
     .on-absolute {
         bottom: 70%;
+    }
+    .grid{
+        grid-template-columns: auto;
     }
 }
